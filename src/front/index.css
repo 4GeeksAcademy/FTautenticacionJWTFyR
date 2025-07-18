@@ -1,0 +1,22 @@
+html,body{
+background-color: teal;
+height: 100%;
+margin: 0;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+footer{
+    background-color:aqua;
+    color:white;
+    padding: 10px 0;
+
+}

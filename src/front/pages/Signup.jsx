@@ -25,15 +25,30 @@ const Signup = () => {
 
     return (
         <form onSubmit={handelSignup}>
-            <h2>Signup</h2>
-            <input type='email' onChange={(e) => setEmail(e.target.value)}
-                placeholder='EMAIL' required />
-            <input type='password' onChange={(e) => setPassword(e.target.value)}
-                placeholder='PASSWORD' required />
-            <button type="submit">Register</button>
+            <h2 class="text-center m-4">Signup</h2>
+            <div class="mb-3 p-2">
+                <label for="inputEmail" class="form-label">Email Adress</label>
+                <input type='email' class="form-control" id="inputEmail" onChange={(e) => setEmail(e.target.value)}
+                placeholder='You Email' required />
+            </div>
+            <div class="mb-3 p-2">
+                <label for="inputPassword" class="form-label">You Password</label>
+                <input type='password' class="form-control" id="inputPassword" onChange={(e) => setPassword(e.target.value)}
+                placeholder='You Password' required />
+
+            </div>
+            <div class=" p-3 justify-content-center">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>            
         </form>
     );
 
 };
 
 export default Signup;
+
+/*
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+*/
